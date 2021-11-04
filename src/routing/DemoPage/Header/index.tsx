@@ -7,7 +7,7 @@ const Header = () => {
     <div className={styles.headerWrap}>
       <Container>
         <div className={styles.headerWrapTitle}>
-          NodeFlair . <span className={styles.headerWrapTitleSpan}>Insights</span>
+          Joblabs . <span className={styles.headerWrapTitleSpan}>Insights</span>
         </div>
         <div className={styles.headerWrapContent}>
         Learn about the latest market trends and find your ideal company

@@ -12,6 +12,7 @@ const Changes = () => {
         data: [20, 3],
         backgroundColor: ["#ccc", "#1fc76a"],
         borderColor: ["#ccc", "#1fc76a"],
+        // color:["#FFF",'#838383'],
         borderWidth: 1,
       },
     ],
@@ -55,54 +56,24 @@ const Changes = () => {
           <Grid item xs={6} md={6}>
             <Grid container spacing={2} className="row-item">
               <Grid item xs={8} md={8}>
-                <Doughnut
-                  data={data}
-                  options={options}
-                  width={200}
-                  height={200}
-                />
+                <Doughnut data={data} options={options} width={200}
+	height={200}/>
               </Grid>
               <Grid item xs={4} md={4}>
-                <div
-                  style={{
-                    textAlign: "center",
-                    color: "#1fc76a",
-                    fontSize: 50,
-                    fontWeight: 600,
-                  }}
-                >
-                  33%
-                </div>
-                <div style={{ textAlign: "center", fontSize: 15 }}>
-                  Female Engineers
-                </div>
+              <div style={{textAlign: "center",color: "#1fc76a", fontSize: 50, fontWeight: 600}}>33%</div>
+                <div style={{textAlign: "center", fontSize: 15,}}>Female Engineers</div>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={6} md={6}>
             <Grid container spacing={2} className="row-item">
               <Grid item xs={8} md={8}>
-                <Doughnut
-                  data={data}
-                  options={options}
-                  width={200}
-                  height={200}
-                />
+              <Doughnut data={data} options={options} width={200}
+	height={200}/>
               </Grid>
               <Grid item xs={4} md={4}>
-                <div
-                  style={{
-                    textAlign: "center",
-                    color: "#1fc76a",
-                    fontSize: 50,
-                    fontWeight: 600,
-                  }}
-                >
-                  22%
-                </div>
-                <div style={{ textAlign: "center", fontSize: 15 }}>
-                  Female Engineers
-                </div>
+              <div style={{textAlign: "center",color: "#1fc76a", fontSize: 50, fontWeight: 600}}>22%</div>
+                <div style={{textAlign: "center", fontSize: 15,}}>Female Engineers</div>
               </Grid>
             </Grid>
           </Grid>

@@ -2,7 +2,7 @@
   "name": "my-app-2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Sotatek-DatNguyen9/demo-insights",
+  "homepage": "https://Sotatek-DatNguyen9.github.io/demo-insights/",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
@@ -16,6 +16,7 @@
     "axios": "^0.21.4",
     "chart.js": "^3.6.0",
     "chartjs-plugin-datalabels": "^2.0.0",
+    "cross-env": "^7.0.3",
     "gh-pages": "^3.2.3",
     "highcharts": "^9.2.2",
     "highcharts-react-official": "^3.0.0",
@@ -35,7 +36,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "NODE_OPTIONS=--max_old_space_size=8192 react-scripts build",
+    "build": " react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

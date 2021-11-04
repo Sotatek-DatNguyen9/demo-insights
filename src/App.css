@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+html * {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-size: 13px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container__page {
+  width: 1420px;
+  max-width: 100%;
+  margin: auto;
+}
+
+:root {
+  --nero: #222222;
+  --cyber-grape-20: #ddd6e3;
+  --deep-purple: #602770;
+  --grey: #676767;
+  --grey-light: #f6f6f9;
+  --grey-light-30: #fcfcfd;
+  --grey-light-50: #fafafc;
+  --grey-dark: #e2e2e2;
+  --violet: #9081AC;
+  --violate-light: #E1DCE2;
+  --purple: #691f74;
+  --purple-dark: #30183f;
+  --purple-light: rgba(105, 31, 116, 0.3);
+  --orange: #E34B31;
+  --orange-dark: #D6432A;
+  --orange-light: #E34B31;
+  --organge-talent: #FE3B1F;
+  --oragnge-salmon: #FAD4C5;
+  --blue: #0DA0BA;
+  --yellow: #DB9714;
+  --green: #60D3BF;
+}
+
+@keyframes ice {
+  50%  {transform: rotate(-3deg) translateY(-5px)}
+}
+
+@keyframes right {
+  100% {
+      left: 20%;
+  }
+}

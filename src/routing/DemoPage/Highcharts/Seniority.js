@@ -13,9 +13,6 @@ const Seniority = () => {
         backgroundColor: "#b7edcf",
         borderColor: "transparent",
         borderWidth: 2,
-        datalabels:{
-          display:true
-        }
       },
       
     ],
@@ -24,13 +21,23 @@ const Seniority = () => {
   };
   
   const options = {
+    responsive:false,
     plugins: {
         legend: {
           display: false
         },
         datalabels:{
           display:true,
-        }
+          anchor:'end',
+          align  :'end',
+          color:"#1fc76a",
+          font: {
+            weight: 'bold',
+            size: 14,
+          }
+        },
+       
+        
       },
     tooltips: {
         callbacks: {
@@ -46,7 +53,7 @@ const Seniority = () => {
           },
           ticks: {
             beginAtZero: true,
-            display: true
+            display: true,
         }
         },
         y: {
@@ -57,7 +64,9 @@ const Seniority = () => {
           },
           ticks: {
             beginAtZero: true,
-            display: false
+            display: false,
+            stepSize: 100,
+            
         }
         },
      }

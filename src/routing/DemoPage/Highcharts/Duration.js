@@ -17,13 +17,23 @@ const Duration = () => {
   };
 
   const options = {
+    responsive:false,
     plugins: {
         legend: {
           display: false
         },
         datalabels:{
           display:true,
-        }
+          anchor:'end',
+          align  :'end',
+          color:"#1fc76a",
+          font: {
+            weight: 'bold',
+            size: 14,
+          }
+        },
+       
+        
       },
     tooltips: {
         callbacks: {
@@ -39,7 +49,7 @@ const Duration = () => {
           },
           ticks: {
             beginAtZero: true,
-            display: true
+            display: true,
         }
         },
         y: {
@@ -50,7 +60,9 @@ const Duration = () => {
           },
           ticks: {
             beginAtZero: true,
-            display: false
+            display: false,
+            stepSize: 100,
+            
         }
         },
      }

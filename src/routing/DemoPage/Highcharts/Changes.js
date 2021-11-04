@@ -4,75 +4,6 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import { Doughnut } from "react-chartjs-2";
 const Changes = () => {
-  const options1 = {
-    chart: {
-      type: "bar",
-      height: 200,
-    },
-    title: {
-      text: "",
-    },
-
-    xAxis: {
-      categories: ["Africa", "America", "Asia", "Europe", "Oceania"],
-      title: {
-        text: null,
-      },
-    },
-    yAxis: {
-      min: 0,
-      title: {
-        text: "Population (millions)",
-        align: "high",
-      },
-      labels: {
-        overflow: "justify",
-      },
-    },
-    tooltip: {
-      valueSuffix: " millions",
-    },
-    plotOptions: {
-      bar: {
-        dataLabels: {
-          enabled: true,
-        },
-      },
-    },
-    legend: {
-      layout: "vertical",
-      align: "right",
-      verticalAlign: "top",
-      x: -40,
-      y: 80,
-      floating: true,
-      borderWidth: 1,
-      backgroundColor:
-        Highcharts.defaultOptions.legend.backgroundColor || "#FFFFFF",
-      shadow: true,
-    },
-    credits: {
-      enabled: false,
-    },
-    series: [
-      {
-        name: "Year 1800",
-        data: [107, 31, 635, 203, 2],
-      },
-      {
-        name: "Year 1900",
-        data: [133, 156, 947, 408, 6],
-      },
-      {
-        name: "Year 2000",
-        data: [814, 841, 3714, 727, 31],
-      },
-      {
-        name: "Year 2016",
-        data: [1216, 1001, 4436, 738, 40],
-      },
-    ],
-  };
   const data = {
     labels: ["Red", "Blue"],
     datasets: [
@@ -124,24 +55,54 @@ const Changes = () => {
           <Grid item xs={6} md={6}>
             <Grid container spacing={2} className="row-item">
               <Grid item xs={8} md={8}>
-                <Doughnut data={data} options={options} width={200}
-	height={200}/>
+                <Doughnut
+                  data={data}
+                  options={options}
+                  width={200}
+                  height={200}
+                />
               </Grid>
               <Grid item xs={4} md={4}>
-              <div style={{textAlign: "center",color: "#1fc76a", fontSize: 50, fontWeight: 600}}>33%</div>
-                <div style={{textAlign: "center", fontSize: 15,}}>Female Engineers</div>
+                <div
+                  style={{
+                    textAlign: "center",
+                    color: "#1fc76a",
+                    fontSize: 50,
+                    fontWeight: 600,
+                  }}
+                >
+                  33%
+                </div>
+                <div style={{ textAlign: "center", fontSize: 15 }}>
+                  Female Engineers
+                </div>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={6} md={6}>
             <Grid container spacing={2} className="row-item">
               <Grid item xs={8} md={8}>
-              <Doughnut data={data} options={options} width={200}
-	height={200}/>
+                <Doughnut
+                  data={data}
+                  options={options}
+                  width={200}
+                  height={200}
+                />
               </Grid>
               <Grid item xs={4} md={4}>
-              <div style={{textAlign: "center",color: "#1fc76a", fontSize: 50, fontWeight: 600}}>22%</div>
-                <div style={{textAlign: "center", fontSize: 15,}}>Female Engineers</div>
+                <div
+                  style={{
+                    textAlign: "center",
+                    color: "#1fc76a",
+                    fontSize: 50,
+                    fontWeight: 600,
+                  }}
+                >
+                  22%
+                </div>
+                <div style={{ textAlign: "center", fontSize: 15 }}>
+                  Female Engineers
+                </div>
               </Grid>
             </Grid>
           </Grid>

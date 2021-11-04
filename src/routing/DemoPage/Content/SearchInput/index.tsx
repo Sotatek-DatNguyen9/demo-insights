@@ -36,7 +36,7 @@ const SearchInput = (props: any) => {
                   <div className={styles.imageContent}>
                     <img
                       className={styles.image}
-                      src="https://nodeflair.s3.ap-southeast-1.amazonaws.com/hxhp8yPWQKDJYLD7gWJvtNvN?response-content-disposition=inline%3B%20filename%3D%22Shopee.png%22%3B%20filename%2A%3DUTF-8%27%27Shopee.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIGSW3555BNQE5HKA%2F20211102%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20211102T112153Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a8662a4d0e7a56f0c6b3aa1717d0f10e4ba0ef2f42879d71cd8b48bf776acef3"
+                      src="https://media.jobslab.io/logo/jobslab_white.png"
                     ></img>
                   </div>
                   <div className={styles.content}>
@@ -49,7 +49,7 @@ const SearchInput = (props: any) => {
         )}
         <div className="d-flex select-item align-items-center">
           <div className="image">
-            <img src="https://nodeflair.s3.ap-southeast-1.amazonaws.com/hxhp8yPWQKDJYLD7gWJvtNvN?response-content-disposition=inline%3B%20filename%3D%22Shopee.png%22%3B%20filename%2A%3DUTF-8%27%27Shopee.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIGSW3555BNQE5HKA%2F20211102%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20211102T112153Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a8662a4d0e7a56f0c6b3aa1717d0f10e4ba0ef2f42879d71cd8b48bf776acef3"></img>
+            <img src="https://media.jobslab.io/logo/jobslab_white.png"></img>
           </div>
           <div className="select-content">
             <h3 className="title-name">{selectObject?.name || "Shopee"}</h3>

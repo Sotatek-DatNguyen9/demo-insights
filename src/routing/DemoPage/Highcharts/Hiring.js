@@ -35,8 +35,8 @@ const Hiring = () => {
           }}
         >
           <Grid item xs={6} md={6}>
-            <Grid container spacing={2} className="row-item">
-              <Grid item xs={4} md={4}>
+            <Grid container spacing={2} className="row-item"  style={{justifyContent:"center",height:"40vh"}}>
+              {/* <Grid item xs={4} md={4}>
                 <div style={{ textAlign: "center" }}>
                   The current Tech Team in SG comprises hires from:
                 </div>
@@ -52,12 +52,13 @@ const Hiring = () => {
               </Grid>
               <Grid item xs={8} md={8}>
                 <HighchartsReact highcharts={Highcharts} options={options1} />
-              </Grid>
+              </Grid> */}
+               <p> Sorry, we don't have enough data for this card yet!</p>
             </Grid>
           </Grid>
           <Grid item xs={6} md={6}>
-            <Grid container spacing={2} className="row-item">
-              <Grid item xs={4} md={4}>
+            <Grid container spacing={2} className="row-item"  style={{justifyContent:"center",height:"40vh"}}>
+              {/* <Grid item xs={4} md={4}>
                 <div style={{ textAlign: "center" }}>
                   The current Tech Team in SG comprises hires from:
                 </div>
@@ -73,7 +74,8 @@ const Hiring = () => {
               </Grid>
               <Grid item xs={8} md={8}>
                 <HighchartsReact highcharts={Highcharts} options={options1} />
-              </Grid>
+              </Grid> */}
+               <p> Sorry, we don't have enough data for this card yet!</p>
             </Grid>
           </Grid>
         </Grid>

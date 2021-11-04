@@ -25,6 +25,7 @@ const Locations = () => {
         backgroundColor: "#b7edcf",
         borderColor: "transparent",
         borderWidth: 2,
+        
       },
     ],
   };
@@ -43,6 +44,16 @@ const Locations = () => {
         position: "right",
         display: false,
       },
+      datalabels:{
+        display:true,
+        anchor:'end',
+        align  :'end',
+        color:"#1fc76a",
+        font: {
+          weight: 'bold',
+          size: 14,
+        }
+      },
       // title: {
       //   display: true,
       //   text: 'Chart.js Horizontal Bar Chart',
@@ -57,6 +68,7 @@ const Locations = () => {
         ticks: {
           beginAtZero: true,
           display: true,
+          stepSize: 200,
         },
       },
       y: {
@@ -72,45 +84,61 @@ const Locations = () => {
       },
     },
   };
-  // const options = {
-  //   plugins: {
-  //       legend: {
-  //         display: false
-  //       },
-  //       datalabels:{
-  //         display:true,
-  //       }
-  //     },
-  //   tooltips: {
-  //       callbacks: {
-  //          label: function(tooltipItem) {
-  //                 return tooltipItem.yLabel;
-  //          }
-  //       }
-  //   },
-  //   scales: {
-  //       x: {
-  //         grid: {
-  //           display:false,
-  //         },
-  //         ticks: {
-  //           beginAtZero: true,
-  //           display: true
-  //       }
-  //       },
-  //       y: {
-  //         display:false,
-  //         grid: {
-  //           display:false,
-  //           tick:false
-  //         },
-  //         ticks: {
-  //           beginAtZero: true,
-  //           display: false
-  //       }
-  //       },
-  //    }
-  // };
+  const options2 = {
+    indexAxis: "y",
+    // Elements options apply to all of the options unless overridden in a dataset
+    // In this case, we are setting the border of each horizontal bar to be 2px wide
+    elements: {
+      bar: {
+        borderWidth: 2,
+      },
+    },
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "right",
+        display: false,
+      },
+      datalabels:{
+        display:true,
+        anchor:'end',
+        align  :'end',
+        color:"#1fc76a",
+        font: {
+          weight: 'bold',
+          size: 14,
+        }
+      },
+      // title: {
+      //   display: true,
+      //   text: 'Chart.js Horizontal Bar Chart',
+      // },
+    },
+    scales: {
+      x: {
+        display: false,
+        grid: {
+          display: false,
+        },
+        ticks: {
+          beginAtZero: true,
+          display: true,
+          stepSize: 300,
+        },
+      },
+      y: {
+       
+        grid: {
+          display: false,
+          tick: false,
+        },
+    //     ticks: {
+    //       beginAtZero: true,
+    //       display: false,
+    //     },
+      },
+    },
+  };
   return (
     <React.Fragment>
       <h2 className="d-flex align-items-center title">
@@ -144,7 +172,7 @@ const Locations = () => {
                 <div style={{textAlign: "center"}}>Top 5 locations with Tech Headcount (including SG):</div>
               </Grid>
               <Grid item xs={8} md={8}>
-                <Bar data={data2} options={options} />
+                <Bar data={data2} options={options2} />
               </Grid>
             </Grid>
           </Grid>

@@ -1,0 +1,50 @@
+.content-3-wrapper {
+  .css-112g1tl {
+    background: rgb(244, 247, 246);
+    width: 100%;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -16vw 0px 0px;
+      height: 20vw;
+      background: url("https://images.snaphunt.com/assets/vectors/illustrations/curve-14.svg")
+        center center / 100% no-repeat;
+    }
+    .css-8ytc6i {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 50px 0px 100px;
+      overflow-x: hidden;
+      .css-8atqhb {
+        width: 100%;
+        height: auto;
+        font-size: 1.14285714rem;
+      }
+      .css-1xaekgw {
+        margin-top: 20px;
+        .css-1s1po1q {
+          font-size: 1.5em;
+          color: #1cc7d0 !important;
+        }
+        .css-15bxtoc {
+          min-height: 1em;
+          font-size: 3em;
+          margin-top: 0px;
+          margin-bottom: 5px;
+        }
+        .css-1v60gbe {
+          font-size: 18px;
+          padding: 5px 0px 20px;
+          line-height: 1.5 !important;
+        }
+      }
+    }
+  }
+  .css-14k4spz{
+    .e56oal20{
+        font-size: 18px;
+    }
+  }
+}

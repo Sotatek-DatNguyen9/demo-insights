@@ -1,0 +1,98 @@
+.navbar-inner-container {
+  background-color: white;
+  height: 56px;
+  padding: 0 !important;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  .navbar-icon {
+    width: 180px;
+    padding: 10px 16px;
+    float: left;
+    margin: 2px auto;
+    img {
+      display: block;
+      overflow-x: hidden;
+      margin: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .navbar-clickable-options-container-left {
+    float: left;
+    margin: 0 auto;
+    display: flex;
+    .navbar-clickable-option {
+      vertical-align: top;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 18px 13px;
+      text-decoration: none;
+      color: #3a3a3a;
+      transition: 0.1s;
+    }
+  }
+  .navbar-clickable-options-container-right {
+    float: right;
+    margin: 0 auto;
+    display: flex;
+    .contribute-dropdown {
+      .contribute-button {
+        width: 130px;
+        vertical-align: top;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 18px 13px;
+        text-decoration: none;
+        color: #1fc76a;
+        transition: 0.1s;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-flow: column;
+        cursor: default;
+        &:hover {
+          .dropdown-item {
+            display: block;
+          }
+        }
+      }
+      .dropdown-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        background-color: white;
+        position: relative;
+        left: 8px;
+        .dropdown-item {
+          width: 130px;
+          height: 30px;
+          font-weight: normal;
+          border-bottom: 1 px solid #f1f1f1;
+          font-size: 13px;
+          color: #3a3a3a;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+        }
+      }
+    }
+    .navbar-clickable-option {
+      vertical-align: top;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 18px 13px;
+      text-decoration: none;
+      color: #3a3a3a;
+      transition: 0.1s;
+    }
+  }
+}

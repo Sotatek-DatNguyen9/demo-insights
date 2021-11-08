@@ -1,0 +1,61 @@
+.content-4-wrapper {
+  .css-1eisnn4 {
+    background: linear-gradient(rgb(28, 199, 208), rgb(19, 191, 222));
+    width: 100%;
+    .css-1g440lb {
+      background: url(https://images.snaphunt.com/assets/vectors/illustrations/curve-15.svg)
+        center calc((0% - 2px)) / 100% no-repeat;
+      width: 100%;
+      .css-e6zcug {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 70px;
+      }
+    }
+  }
+  .css-1py1l5l{
+    width: 60%;
+    margin: auto;
+  }
+  .slick-next {
+    display: none !important;
+  }
+  .slick-prev {
+    display: none !important;
+  }
+  .slick-dots {
+    position: absolute !important;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 10px;
+    list-style: none;
+    text-align: center;
+    li {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      margin: 0 5px;
+      padding: 0;
+      button {
+        border: 1px solid #000;
+        background: 0 0;
+        border-radius: 50%;
+        &::before {
+          content: "" !important;
+        }
+      }
+    }
+    .slick-active {
+      button {
+        background: rgb(28, 199, 208);
+        border: 1px solid rgb(28, 199, 208);
+      }
+    }
+  }
+}

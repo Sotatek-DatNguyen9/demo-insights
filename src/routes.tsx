@@ -6,6 +6,7 @@ import ErrorBoundary from './components/Base/ErrorBoundary';
 import TaxCalculator from './routing/TaxCalculator';
 import ConvertPage from './routing/ConvertPage';
 import DemoPage from "./routing/DemoPage";
+import HomePage from './routing/HomePage/HomePage';
 
 /**
  * Main App routes.
@@ -13,7 +14,7 @@ import DemoPage from "./routing/DemoPage";
 const routes = () => (
   <div>
     <Switch>
-      <Route exact path="/" component={DemoPage} />
+      <Route exact path="/" component={HomePage} />
       <Route exact path="/convert" component={ConvertPage} />
       <Route path="/error" component={ErrorPage} />
       <Route exact path="/demo" component={DemoPage} />

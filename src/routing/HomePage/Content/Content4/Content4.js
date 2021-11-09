@@ -16,6 +16,14 @@ function Content4(props) {
       </div>
     ),
   };
+  const settings1 = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
   return (
     <div className="content-4-wrapper">
       <div className="css-1eisnn4">
@@ -142,12 +150,45 @@ function Content4(props) {
             </div>
             <div className="ui fluid raised card css-1h06tb5">
               <div className="content css-jrzc9f">
-                <div className="css-1u9juce"></div>
+                <div className="css-1u9juce">
+                <Slider {...settings1}>
+                 <div className="item">
+                    <img src="https://images.snaphunt.com/assets/images/logos/h_50/mazars.jpeg" alt="mazars llp logo" className="css-6kk5wx" />
+                 </div>
+                 <div className="item">
+                  <img src="https://images.snaphunt.com/assets/images/logos/h_50/f8.jpeg" alt="f8 innovation logo" className="css-6kk5wx" />
+                  </div>
+                  <div className="item">
+                  <img src="https://images.snaphunt.com/assets/images/logos/h_50/mazars.jpeg" alt="mazars llp logo" className="css-6kk5wx" />
+                  </div>
+                  <div className="item">
+                  <img src="https://images.snaphunt.com/assets/images/logos/h_50/f8.jpeg" alt="f8 innovation logo" className="css-6kk5wx" />
+                  </div>
+                  <div className="item">
+                  <img src="https://images.snaphunt.com/assets/images/logos/h_50/mazars.jpeg" alt="mazars llp logo" className="css-6kk5wx" />
+                  </div>
+                  <div className="item">
+                  <img src="https://images.snaphunt.com/assets/images/logos/h_50/f8.jpeg" alt="f8 innovation logo" className="css-6kk5wx" />
+                  </div>
+                  <div className="item">
+                  <img src="https://images.snaphunt.com/assets/images/logos/h_50/mazars.jpeg" alt="mazars llp logo" className="css-6kk5wx" />
+                  </div>
+                  <div className="item">
+                  <img src="https://images.snaphunt.com/assets/images/logos/h_50/f8.jpeg" alt="f8 innovation logo" className="css-6kk5wx" />
+                  </div>
+                  <div className="item">
+                  <img src="https://images.snaphunt.com/assets/images/logos/h_50/f8.jpeg" alt="f8 innovation logo" className="css-6kk5wx" />
+                  </div>
+                  <div className="item">
+                  <img src="https://images.snaphunt.com/assets/images/logos/h_50/mazars.jpeg" alt="mazars llp logo" className="css-6kk5wx" />
+                  </div>
+                </Slider>
+                </div>
               </div>
             </div>
             <div className="css-15ijm9t">
               <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2">
-                <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-4">
+              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-4">
                   <div className="ui fluid raised card css-1k020ra">
                     <div className="content">
                       <div>
@@ -171,13 +212,13 @@ function Content4(props) {
                               <img
                                 className="Image-actual"
                                 alt="No Image"
-                                src="https://images.snaphunt.com/assets/images/w_165/20210317-Tiina-Homepage.jpg"
+                                src="https://images.snaphunt.com/assets/images/w_165/20210319-ross-belhomme.jpg"
                               />
                               <div
                                 className="Image-actual"
                                 style={{
                                   backgroundImage:
-                                    'url("https://images.snaphunt.com/assets/images/w_165/20210317-Tiina-Homepage.jpg")',
+                                    'url("https://images.snaphunt.com/assets/images/w_165/20210319-ross-belhomme.jpg")',
                                   backgroundSize: "cover",
                                   backgroundPosition: "center center",
                                 }}
@@ -199,15 +240,18 @@ function Content4(props) {
                           className="big icon sh-quote-1 css-boq6t7"
                         />
                         <p className="css-1e7vlpv">
-                          What I love about Snaphunt as an HR Manager is that I
-                          can set all of the prerequisites for the role and
-                          leave Snaphunt’s AI to do the rest... thank you
-                          Snaphunt, you’ve made my life easier!
+                          With Snaphunt, our firm was able to source and
+                          ultimately hire a number of talented individuals at a
+                          fraction of the cost and time of traditional
+                          recruitment agencies. Snaphunt is now one of our key
+                          partners, as we look to build a high performing team
+                          across Asia.
                         </p>
                         <h4 className="ui header css-1apwt4c">
-                          Tiina Sepulveda
+                          {" "}
+                          Ross Belhomme
                           <div className="sub header">
-                            HR Manager - International, PM Square
+                            Board Member, STEP Digital Assets
                           </div>
                         </h4>
                       </div>
@@ -443,18 +487,7 @@ function Content4(props) {
                       />
                     </a>
                   </div>
-                  <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-auto">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://www.hrtechmap.online/market-map-pdf"
-                    >
-                      <img
-                        src="https://images.snaphunt.com/assets/images/h_70/hrTechLogo.png"
-                        className="ui image"
-                      />
-                    </a>
-                  </div>
+                 
                 </div>
               </div>
             </div>

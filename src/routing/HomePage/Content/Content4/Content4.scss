@@ -14,7 +14,7 @@
       }
     }
   }
-  .css-1py1l5l{
+  .css-1py1l5l {
     width: 60%;
     margin: auto;
   }
@@ -56,6 +56,73 @@
         background: rgb(28, 199, 208);
         border: 1px solid rgb(28, 199, 208);
       }
+    }
+  }
+  .css-15ijm9t {
+    margin: 50px 0px;
+    .content {
+      padding: 10px 20px;
+      .ProfileImage-container {
+        width: auto;
+        height: 100%;
+        position: relative;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        .ProfileImage-size4 {
+          width: 150px;
+          height: 150px;
+          font-size: 26px;
+          border-width: 1px;
+          border-color: black;
+          border-style: solid;
+          border-radius: 50%;
+          .Image {
+            background-color: rgb(229, 229, 229);
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border-radius: 50%;
+            .Image-actual{
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              background-position: 50%;
+              background-repeat: no-repeat;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .css-1h06tb5{
+    .slick-dots{
+      display: none !important;
+    }
+    .item{
+      padding: 10px 20px;
+      width: 50px;
+      height: 60px;
+      img{
+        filter: grayscale(100%);
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .css-1jfceaj {
+    .content {
+      flex-grow: 1;
+      border: none;
+      border-top: 1 px solid rgba(34, 36, 38, 0.1);
+      background: none;
+      margin: 0;
+      padding: 10px;
+      box-shadow: none;
+      font-size: 1em;
+      border-radius: 0;
     }
   }
 }
